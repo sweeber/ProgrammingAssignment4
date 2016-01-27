@@ -93,5 +93,8 @@ gatheredDT <- gather(allDT,
 
 summaryDT <- summarize(group_by(gatheredDT, Subject, Activity, Feature), mean=mean(Value))
 
+# Spread the summary data back into a wide data frame
+tidyDT <- spread(summaryDT, Feature, mean)
+
 # Write this data set out
-write.csv(summaryDT, file = "mean-std-summary-tidy.csv", row.names = FALSE)
+write.csv(tidyDT, file = "mean-std-summary-tidy.csv", row.names = FALSE)
