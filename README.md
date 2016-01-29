@@ -18,5 +18,5 @@ for details on the data.
 1. Start R and be sure the working directory is set to the project directory.
 1. Source run_analysis.R. It will create 2 files, both of which are descibed in detail in the code book:
   * A combined dataset of both test and train data with mean and standard deviation features: mean-std.combined.csv
-  * A tidy dataset with the average if eacg feature for each subject and activity: mean-std-summary-tidy.csv
+  * A tidy dataset with the average of each feature for each subject and activity: mean-std-summary-tidy.txt
 
