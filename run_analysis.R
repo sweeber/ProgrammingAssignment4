@@ -97,4 +97,4 @@ summaryDT <- summarize(group_by(gatheredDT, Subject, Activity, Feature), mean=me
 tidyDT <- spread(summaryDT, Feature, mean)
 
 # Write this data set out
-write.csv(tidyDT, file = "mean-std-summary-tidy.csv", row.names = FALSE)
+write.table(tidyDT, file = "mean-std-summary-tidy.txt", row.names = FALSE)
